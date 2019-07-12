@@ -1,0 +1,79 @@
+/* Overrides */
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding-top: 78px;
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #5f6061;
+}
+
+p {
+    line-height: 2;
+}
+a, button { transition: all 0.3s ease; }
+a:hover { text-decoration: none; }
+/* end Overrides*/
+
+
+.container-fluid {
+    max-width: 1430px;
+}
+.tm-brand-row {
+    padding-bottom: 30px;
+}
+.tm-brand-name {
+    color: #98999A;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #98999A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 399px) {
+    .tm-brand-name {
+        font-size: 2em;
+        width: 250px;
+        margin-right: 10px;
+    }
+}
+
+/* Navbar*/
+.tm-nav-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    width: 101px;
+    height: 52px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    border: 1px solid #98999A;
+    color: #98999A;
+}
+
+@media (max-width: 991px) {
+    /*.tm-nav { position: relative; }*/
+
+    .tm-navbar {
+        background-color: transparent;
+        justify-content: flex-end;
+        padding-right: 0;
+    }
+}
+/* end Navbar */
