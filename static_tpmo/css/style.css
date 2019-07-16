@@ -72,12 +72,32 @@ ul {
 .tm-mb-5 { margin-bottom: 45px; }
 .tm-mb-6 { margin-bottom: 50px; }
 
+@media (max-width: 991px) {
+    .tm-page-col-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tm-page-col-right {
+        width: 100%;
+    }
+}
+
+/* end Page Layout */
+
 /* Colors */
 .tm-text-secondary {
     color: #669999;
 }
 .tm-bg-primary {
     background-color: #ca9acd;
+}
+.tm-bg-gradient {
+    background: linear-gradient(
+        135deg,
+        #a0c0c0 0%,
+        #669999 100%
+    );
 }
 /* end Colors */
 
@@ -136,13 +156,37 @@ ul {
 }
 
 @media (max-width: 991px) {
-    /*.tm-nav { position: relative; }*/
+    .tm-nav { position: relative; }
+
+    #navbarNav {
+        position: absolute;
+        top: 52px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgba(255,255,255,0.9);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+        z-index: 1001;
+    }
 
     .tm-navbar {
         background-color: transparent;
         justify-content: flex-end;
         padding-right: 0;
     }
+
+    .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        height: 45px;
+        margin: 5px 15px;
+    }
+
 }
 /* end Navbar */
 
@@ -170,7 +214,7 @@ ul {
 }
 
 .tm-small-parallax {
-    min-height: 240px;
+    min-height: 230px;
     background: transparent;
 }
 
@@ -227,6 +271,70 @@ ul {
         margin-top: 50px;
     }
 }
+
+/* Copyright and Page Footer */
+.tm-copyright-text {
+
+}
+
+.tm-copyright-link {
+
+}
+.tm-page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* end Copyright and Page Footer */
+
+/* About Page */
+.tabs { list-style: none; }
+
+.tabs > li > a {
+    border: 1px solid #cfd0d1;
+    color: #999a9b;
+    padding: 20px 25px;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 30px;
+}
+
+.tm-tab-icon {
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    background-color: transparent;
+    vertical-align: middle;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.tabs > li > a.active .tm-tab-icon,
+.tabs > li > a:hover .tm-tab-icon {
+    background-color:#669999;
+}
+
+.tm-about-person {
+    max-width: 280px;
+}
+
+.tm-about-social-icon {
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #cfd0d1;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.tm-about-social-link:hover > .tm-about-social-icon {
+    background-color: #979899;
+}
+
+/* End About Page */
 
 /* test */
 .div-border {
